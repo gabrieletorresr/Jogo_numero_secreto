@@ -20,7 +20,7 @@ Este projeto consiste em um jogo simples de adivinhação de números desenvolvi
 
 ![Campo de entrada resultado](img/img_print/captura_de_tela_ganho.png)
 
-[Vídeo do jogo em ação]([https://link-para-video.com](img/video_gif/jogo_gif.gif)
+[Vídeo do jogo em ação](img/video_gif/jogo_gif.gif)
 
 ## Recursos
 
