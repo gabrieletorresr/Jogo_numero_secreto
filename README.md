@@ -15,14 +15,12 @@ Este projeto consiste em um jogo simples de adivinhação de números desenvolvi
 4. O jogo informará se o número que você digitou é muito alto, muito baixo ou se você acertou o número secreto.
 5. Você pode reiniciar o jogo clicando no botão "Novo jogo".
 
-### Exemplo do Campo de Entrada:
-![Campo de entrada](img/screenshot-input.png)
+## Demonstração
+![Tela principal](img/img_print/capturadetelaprincipal.png)
 
-### Exemplo do Campo de Entrada com o Resultado:
-![Campo de entrada resultado](img/screenshot-result.png)
+![Campo de entrada resultado](img/img_print/capturadetelaganho.png)
 
-### Exemplo de Interface:
-![Interface](img/screenshot-interface.png)
+[Veja um vídeo do jogo em ação]([https://link-para-video.com](https://github.com/user-attachments/assets/2bf9a2ab-be84-4d64-ba13-924cbe2da4b1)
 
 ## Recursos
 
@@ -32,9 +30,16 @@ Este projeto consiste em um jogo simples de adivinhação de números desenvolvi
 
 ## Estrutura de Arquivos
 
-- `index.html`: Arquivo principal que contém a estrutura da página do jogo.
-- `style.css`: Arquivo CSS para estilização da interface.
-- `app.js`: Arquivo JavaScript com a lógica do jogo.
+- `index.html`: Estrutura básica do jogo e elementos HTML.
+- `style.css`: Estilos e layout do jogo.
+- `app.js`: Lógica do jogo e manipulação do DOM.
+
+ ## Tecnologias Utilizadas
+
+- HTML
+- CSS
+- JavaScript
+- [ResponsiveVoice](https://responsivevoice.org/) para narração
 
 ## Contribuição
 
