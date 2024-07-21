@@ -16,11 +16,11 @@ Este projeto consiste em um jogo simples de adivinhação de números desenvolvi
 5. Você pode reiniciar o jogo clicando no botão "Novo jogo".
 
 ## Demonstração
-![Tela principal](img/img_print/capturadetelaprincipal.png)
+![Tela principal](img/img_print/captura_de_tela_principal.png)
 
 ![Campo de entrada resultado](img/img_print/capturadetelaganho.png)
 
-[Veja um vídeo do jogo em ação]([https://link-para-video.com](https://github.com/user-attachments/assets/2bf9a2ab-be84-4d64-ba13-924cbe2da4b1)
+[Acesse o link para ver o vídeo do jogo em ação]([https://link-para-video.com](https://github.com/user-attachments/assets/2bf9a2ab-be84-4d64-ba13-924cbe2da4b1)
 
 ## Recursos
 
