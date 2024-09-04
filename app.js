@@ -1,13 +1,21 @@
+
 let listaDeNumerosSorteados = [];
 let numeroLimite = 100;
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
 
-/*function exibirTextoNaTela(tag, texto) {
+function exibirTextoNaTela(tag, texto, classe) {
     let campo = document.querySelector(tag);
-    campo.innerHTML = texto;
-    responsiveVoice.speak(texto, 'Brazilian Portuguese Female', {rate:1.2});*/
-    
+    if (campo) {
+        campo.innerHTML = texto;
+        campo.className = classe;
+
+        //comando de voz desabilitado
+        /*if (typeof responsiveVoice !== 'undefined') {
+            responsiveVoice.speak(texto, 'Brazilian Portuguese Female', { rate: 1.2 });
+        }*/
+    }
+}
 
 function exibirMensagemInicial() {
     exibirTextoNaTela('h1', 'Jogo do número secreto');
@@ -17,7 +25,7 @@ function exibirMensagemInicial() {
 exibirMensagemInicial();
 
 function verificarChute() {
-    let chute = document.querySelector('input').value;
+    let chute = document.querySelector('.container__input').value;
     
     if (chute == numeroSecreto) {
         exibirTextoNaTela('h1', 'Acertou!');
@@ -25,12 +33,26 @@ function verificarChute() {
         let mensagemTentativas = `Você descobriu o número secreto com ${tentativas} ${palavraTentativa}!`;
         exibirTextoNaTela('p', mensagemTentativas);
         document.getElementById('reiniciar').removeAttribute('disabled');
+        
+        confetti({
+            particleCount: 100,
+            spread: 70,
+            origin: { y: 0.6 }
+        });
+
     } else {
+        let mensagem = '';
+        let classe = '';
+        
         if (chute > numeroSecreto) {
-            exibirTextoNaTela('p', 'O número secreto é menor');
+            mensagem = 'O número secreto é menor';
+            classe = 'mensagem-menor';
         } else {
-            exibirTextoNaTela('p', 'O número secreto é maior');
+            mensagem = 'O número secreto é maior';
+            classe = 'mensagem-maior'; 
         }
+        
+        exibirTextoNaTela('p', mensagem, classe);
         tentativas++;
         limparCampo();
     }
@@ -53,8 +75,7 @@ function gerarNumeroAleatorio() {
 }
 
 function limparCampo() {
-    chute = document.querySelector('input');
-    chute.value = '';
+    chute = document.querySelector('.container__input').value = '';
 }
 
 function reiniciarJogo() {
